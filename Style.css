@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    padding-right: 270px; /* Espaço para a aba lateral */
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+}
+.promotion-banner {
+    background-color: #ff5722; /* Cor de fundo da promoção */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px; /* Limite máximo da largura dos jogos */
+}
+.game {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.game:hover {
+    transform: scale(1.05);
+}
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.game h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.game p {
+    font-size: 1.1em;
+    color: #666;
+}
+.game button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.game button:hover {
+    background-color: #218838;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 230px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Garante que a aba lateral fique acima do conteúdo principal */
+}
+.sidebar h3 {
+    margin-top: 0;
+}
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.game-d {
+    grid-column: span 2;
+}
